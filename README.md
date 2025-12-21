@@ -72,8 +72,7 @@ football_data_transfermark_eda/
 │   ├── question.ipynb              # Các câu hỏi nghiên cứu
 │   ├── exploration.ipynb           # Phân tích khám phá dữ liệu (EDA)
 │   ├── modeling.ipynb              # Huấn luyện và xây dựng mô hình
-│   ├── analysis.ipynb              # Đánh giá kết quả và phân tích 
-│   └── competition_mapping.csv     # File map tên giải đấu
+│   └── analysis.ipynb              # Đánh giá kết quả và phân tích
 │
 ├── README.md                       # Thông tin dự án
 └── requirement.txt                 # Danh sách thư viện cần thiết
