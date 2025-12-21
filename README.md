@@ -76,14 +76,17 @@ football_data_transfermark_eda/
 │   └── competition_mapping.csv     # File map tên giải đấu
 │
 ├── README.md                       # Thông tin dự án
-└── requirement.txt                # Danh sách thư viện cần thiết
+└── requirement.txt                 # Danh sách thư viện cần thiết
+└── project_summary.pdf             # Tổng kết dự án
+
+
 ```
 ## 6. How to run the project 🚀
 
 ### 6.1. Environment Setup
 Trước tiên, cài đặt các thư viện cần thiết bằng lệnh:
 ```bash
-pip install -r requirements.txt
+pip install -r requirement.txt
 ```
 ### 6.2. Project Workflow
 
@@ -97,7 +100,6 @@ Quy trình thực hiện dự án được triển khai theo thứ tự các not
 2. **preprocess.ipynb**  
    - Làm sạch và tiền xử lý dữ liệu
    - Chuẩn hóa và biến đổi các đặc trưng cần thiết  
-   - Encoding các biến categorical  
    - Xuất dữ liệu đã xử lý: `data/processed_players_data.csv`
 
 3. **exploration.ipynb**  
@@ -110,16 +112,17 @@ Quy trình thực hiện dự án được triển khai theo thứ tự các not
      - Quốc tịch
 
 4. **question.ipynb**  
-   - Đặt và trả lời các câu hỏi nghiên cứu chính của dự án
+   - Lý do, động lực và ý nghĩa thực tiễn của các câu hỏi
    
-5. **modeling.ipynb**  
-   - Huấn luyện mô hình các mô hình
-   - Tối ưu các siêu tham số của mô hình  
-   - Lưu tập dữ liệu dùng cho mô hình CatBoost:
-     - `data/train_catboost.csv`
-     - `data/test_catboost.csv`
+5. **modeling.ipynb**
+   - Tối ưu các siêu tham số của mô hình
+   - Huấn luyện và đánh giá các mô hình
+   - Chọn ra mô hình tốt nhất
+   - Phân tích độ quan trọng của các đặc trưng 
+  
 
-6. **analysis.ipynb**  
-   - Rút ra nhận xét và kết luận cho các câu hỏi ý nghĩa
+7. **analysis.ipynb**
+   - Phân tích và trả lời các câu hỏi nghiên cứu
+   - Rút ra nhận xét và kết luận
 
 
