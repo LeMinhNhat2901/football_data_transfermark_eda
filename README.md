@@ -76,6 +76,53 @@ football_data_transfermark_eda/
 │   └── competition_mapping.csv     # File map tên giải đấu
 │
 ├── README.md                       # Thông tin dự án
-└── requirements.txt                # Danh sách thư viện cần thiết
+└── requirement.txt                 # Danh sách thư viện cần thiết
+└── project_summary.pdf             # Tổng kết dự án
+
+
+```
+## 6. How to run the project 🚀
+
+### 6.1. Environment Setup
+Trước tiên, cài đặt các thư viện cần thiết bằng lệnh:
+```bash
+pip install -r requirement.txt
+```
+### 6.2. Project Workflow
+
+Quy trình thực hiện dự án được triển khai theo thứ tự các notebook sau:
+
+1. **collection.ipynb**  
+   - Thu thập dữ liệu cầu thủ 
+   - Tổng hợp thông tin cơ bản: tên cầu thủ, tuổi, vị trí, quốc tịch, CLB, giải đấu  
+   - Lưu dữ liệu thô vào thư mục `data/players_data.csv`
+
+2. **preprocess.ipynb**  
+   - Làm sạch và tiền xử lý dữ liệu
+   - Chuẩn hóa và biến đổi các đặc trưng cần thiết  
+   - Xuất dữ liệu đã xử lý: `data/processed_players_data.csv`
+
+3. **exploration.ipynb**  
+   - Phân tích khám phá dữ liệu (EDA)  
+   - Trực quan hóa phân bố giá trị cầu thủ
+   - Phân tích mối quan hệ giữa giá trị cầu thủ và:
+     - Tuổi
+     - Vị trí thi đấu
+     - Giải đấu
+     - Quốc tịch
+
+4. **question.ipynb**  
+   - Lý do, động lực và ý nghĩa thực tiễn của các câu hỏi
+   
+5. **modeling.ipynb**
+   - Tối ưu các siêu tham số của mô hình
+   - Huấn luyện và đánh giá các mô hình
+   - Chọn ra mô hình tốt nhất
+   - Phân tích độ quan trọng của các đặc trưng 
+  
+
+7. **analysis.ipynb**
+   - Phân tích và trả lời các câu hỏi nghiên cứu
+   - Rút ra nhận xét và kết luận
 
 
